@@ -1,7 +1,5 @@
 package springbootpackt.service;
 
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.core.io.Resource;
@@ -17,12 +15,10 @@ import springbootpackt.model.Image;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
 @Service
-
 public class ImageService {
 
     private static final String UPLOAD_ROOT = "upload-dir";

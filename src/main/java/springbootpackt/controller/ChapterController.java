@@ -1,6 +1,5 @@
 package springbootpackt.controller;
 
-
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,7 +19,6 @@ public class ChapterController {
 
     @GetMapping
     public Flux<Chapter> getChapters() {
-
         return this.chapterRepository.findAll();
     }
 }

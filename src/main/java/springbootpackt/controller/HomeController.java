@@ -5,7 +5,6 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 import springbootpackt.service.ImageService;
@@ -13,7 +12,6 @@ import springbootpackt.service.ImageService;
 import java.io.IOException;
 
 @RestController
-@RequestMapping("")
 public class HomeController {
 
     private static final String BASE_PATH = "/images";
